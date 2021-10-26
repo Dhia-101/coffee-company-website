@@ -22,33 +22,34 @@ body {
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   position: relative; }
-  .header .logo {
+  .header__logo {
     position: absolute;
     width: 8rem;
     top: 4rem;
     left: 4rem; }
-  .header .header__text-box {
+  .header__text-box {
     left: 50%;
     position: absolute;
     text-align: center;
     top: 40%;
     transform: translate(-50%, -50%); }
-  .header .heading-primary {
-    color: #FFFFFF;
-    font-weight: 400;
-    text-transform: uppercase; }
-    .header .heading-primary .heading-primary--main {
-      display: block;
-      font-size: 6rem;
-      letter-spacing: 3.5rem;
-      animation: MoveInLeft 1.5s ease-out; }
-    .header .heading-primary .heading-primary--sub {
-      display: block;
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 1.7rem;
-      animation: MoveInRight 1.5s ease-out;
-      margin-bottom: 4rem; }
+
+.heading-primary {
+  color: #FFF;
+  font-weight: 400;
+  text-transform: uppercase; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    letter-spacing: 3.5rem;
+    animation: MoveInLeft 1.5s ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.7rem;
+    animation: MoveInRight 1.5s ease-out;
+    margin-bottom: 4rem; }
 
 .btn {
   position: relative;
