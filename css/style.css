@@ -27,3 +27,15 @@ body {
     width: 8rem;
     top: 2rem;
     left: 2rem; }
+  .header .heading-primary {
+    color: #FFFFFF;
+    font-weight: 400;
+    text-transform: uppercase; }
+    .header .heading-primary .heading-primary-main {
+      display: block;
+      font-size: 60px;
+      letter-spacing: 35px; }
+  .header .heading-primary-sub {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px; }

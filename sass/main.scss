@@ -43,4 +43,21 @@ body {
       left: 2rem;
     }
 
+  .heading-primary {
+    color: #FFFFFF;
+    font-weight: 400;
+    text-transform: uppercase;
+    .heading-primary-main {
+      display: block;
+      font-size: 60px;
+      letter-spacing: 35px;
+    }
+
+    }
+    .heading-primary-sub {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 17.4px;
+  }
+
 }
