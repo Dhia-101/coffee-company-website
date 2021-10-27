@@ -1,0 +1,35 @@
+.composition {
+  position: relative;
+  &__photo {
+    width: 55%;
+    position: absolute;
+    z-index: 10;
+    transition: transform 0.3s, outline .1s;
+    box-shadow: 0 1rem 2rem rgba($color-shadow, 0.4);
+    border-radius: 5px;
+    //outline-offset: 1px;
+
+    &:hover {
+      transform: scale(1.05);
+      z-index: 20;
+      outline: 3px solid $color-primary-dark;
+    }
+
+
+    &--1 {
+      left: 0;
+      top: -2rem;
+    }
+
+    &--2 {
+      right: 0;
+      top: 2rem;
+    }
+
+    &--3 {
+      left: 20%;
+      top: 14rem;
+    }
+  }
+  // to add no hover image scale down effect
+}

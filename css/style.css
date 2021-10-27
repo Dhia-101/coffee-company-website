@@ -138,19 +138,43 @@ body {
     .btn--white:after {
       background-color: #FFF; }
 
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    position: absolute;
+    z-index: 10;
+    transition: transform 0.3s, outline .1s;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    border-radius: 5px; }
+    .composition__photo:hover {
+      transform: scale(1.05);
+      z-index: 20;
+      outline: 3px solid #28b485; }
+    .composition__photo--1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--2 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--3 {
+      left: 20%;
+      top: 14rem; }
+
 .link:link, .link:visited {
   font-size: 1.6rem;
   color: #55c57a;
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #55c57a;
-  padding: 1px 4px; }
+  padding: 1px 4px;
+  transition: all 0.3s; }
 
 .link:hover {
   background-color: #55c57a;
   color: #FFF;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px); }
+  transform: translateY(-4px); }
 
 .link:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
