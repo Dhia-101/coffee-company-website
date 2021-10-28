@@ -5,11 +5,13 @@
   &__side {
     width: 100%;
     height: 100%;
-    transition: all 0.8s ease;
+    transition: all .8s ease;
     position: absolute;
     top: 0;
     left: 0;
     backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 .5rem 4rem rgba($color-shadow, 0.15) ;
     &--front {
       background-color: #7ed56f;
     }
@@ -20,11 +22,22 @@
   }
 
   &:hover &__side--front {
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
   }
 
   &:hover &__side--back {
     transform: rotateY(0deg);
   }
+
+  &__picture {
+    height: 40%;
+    background-size: cover;
+    background-position: top left;
+    background-blend-mode: screen;
+    &--first-card {
+      background-image: linear-gradient(to right, $color-orange, $color-orange-lighter) ,url("../img/nat-5.jpg");
+    }
+  }
+
 }
 
