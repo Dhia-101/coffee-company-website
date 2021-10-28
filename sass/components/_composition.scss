@@ -15,7 +15,6 @@
       outline: 3px solid $color-primary-dark;
     }
 
-
     &--1 {
       left: 0;
       top: -2rem;
@@ -31,5 +30,7 @@
       top: 14rem;
     }
   }
-  // to add no hover image scale down effect
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
+  }
 }

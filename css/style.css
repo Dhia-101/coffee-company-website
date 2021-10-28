@@ -160,6 +160,8 @@ body {
     .composition__photo--3 {
       left: 20%;
       top: 14rem; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
 
 .link:link, .link:visited {
   font-size: 1.6rem;
