@@ -13,18 +13,18 @@
     border-radius: 3px;
     box-shadow: 0 .5rem 4rem rgba($color-shadow, 0.15) ;
     overflow: hidden;
-    &--front {
-      //
-    }
+
+    &--front { }
     &--back {
       transform: rotateY(180deg);
-
       &-first-card {
         background-image: linear-gradient(to right bottom, $color-orange, $color-orange-lighter);
       }
     }
   }
 
+
+  // card animation
   &:hover &__side--front {
     transform: rotateY(-180deg);
   }
@@ -32,7 +32,9 @@
   &:hover &__side--back {
     transform: rotateY(0deg);
   }
+  // ---------------
 
+  // front side style
   &__picture {
     height: 20rem;
     background-size: cover;
@@ -43,31 +45,30 @@
     &--first-card {
       background-image: linear-gradient(to right, $color-orange, $color-orange-lighter) ,url("../img/nat-5.jpg");
     }
-    
   }
 
-    &__heading {
-      font-size: 2.5rem;
-      font-weight: 300;
-      text-transform: uppercase;
-      color: $color-white;
-      position: absolute;
-      top: 22%;
-      right: 1rem;
-      text-align: right;
-      width: 50%;
-    }
+  &__heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $color-white;
+    position: absolute;
+    top: 22%;
+    right: 1rem;
+    text-align: right;
+    width: 50%;
+  }
 
-    &__heading-span {
-      -webkit-box-decoration-break: clone;
-      box-decoration-break: clone;
-      padding: 1rem 2rem;
+  &__heading-span {
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    padding: 1rem 2rem;
 
-      &--first-card {
-        background-image:
-                linear-gradient(to right, rgba($color-orange-lighter, .85), rgba($color-orange, .85));
-      }
+    &--first-card {
+      background-image:
+              linear-gradient(to right, rgba($color-orange-lighter, .85), rgba($color-orange, .85));
     }
+  }
 
   &__details {
     padding: 3rem;
@@ -86,5 +87,42 @@
       }
     }
   }
+  // -------------
+
+  // back side style
+
+  &--back {
+    &-first-card {
+      background-image: linear-gradient(to right bottom, $color-orange, $color-orange-lighter);
+    }
+  }
+
+  &__cta {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  &__price-box {
+    margin-bottom: 4rem;
+    color: $color-white;
+  }
+
+  &__price-description {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-weight: 100;
+    font-size: 6rem;
+  }
+
+  &__cta-btn {
+
+  }
 }
+  // ------------
 
