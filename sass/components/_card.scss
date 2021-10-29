@@ -17,9 +17,6 @@
     &--front { }
     &--back {
       transform: rotateY(180deg);
-      &-first-card {
-        background-image: linear-gradient(to right bottom, $color-orange, $color-orange-lighter);
-      }
     }
   }
 
@@ -45,6 +42,9 @@
     &--first-card {
       background-image: linear-gradient(to right, $color-orange, $color-orange-lighter) ,url("../img/nat-5.jpg");
     }
+    &--second-card {
+      background-image: linear-gradient(to right, $color-primary, $color-primary-dark) ,url("../img/nat-6.jpg");
+    }
   }
 
   &__heading {
@@ -68,6 +68,11 @@
       background-image:
               linear-gradient(to right, rgba($color-orange-lighter, .85), rgba($color-orange, .85));
     }
+    &--second-card {
+      background-image:
+              linear-gradient(to right, rgba($color-primary, .85), rgba($color-primary-dark, .85));
+    }
+
   }
 
   &__details {
@@ -91,10 +96,15 @@
 
   // back side style
 
-  &--back {
-    &-first-card {
-      background-image: linear-gradient(to right bottom, $color-orange, $color-orange-lighter);
-    }
+  &__side--back {
+      transform: rotateY(180deg);
+
+      &-first-card {
+        background-image: linear-gradient(to right bottom, $color-orange, $color-orange-lighter);
+      }
+      &-second-card {
+        background-image: linear-gradient(to right bottom, $color-primary-dark, $color-primary);
+      }
   }
 
   &__cta {
