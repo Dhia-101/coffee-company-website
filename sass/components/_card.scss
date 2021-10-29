@@ -1,6 +1,6 @@
 .card {
   perspective: 150rem;
-  height: 55rem;
+  height: 49rem;
   position: relative;
   &__side {
     width: 100%;
@@ -14,11 +14,14 @@
     box-shadow: 0 .5rem 4rem rgba($color-shadow, 0.15) ;
     overflow: hidden;
     &--front {
-      background-color: #7ed56f;
+      //
     }
     &--back {
       transform: rotateY(180deg);
-      background-color: $color-white;
+
+      &-first-card {
+        background-image: linear-gradient(to right bottom, $color-orange, $color-orange-lighter);
+      }
     }
   }
 
@@ -31,7 +34,7 @@
   }
 
   &__picture {
-    height: 40%;
+    height: 20rem;
     background-size: cover;
     background-position: top left;
     background-blend-mode: screen;
@@ -65,5 +68,23 @@
                 linear-gradient(to right, rgba($color-orange-lighter, .85), rgba($color-orange, .85));
       }
     }
+
+  &__details {
+    padding: 3rem;
+    ul {
+      list-style-type: none;
+      width: 80%;
+      margin: 0 auto;
+      li {
+        padding: 1rem 0;
+        color: $color-grey-dark;
+        font-size: 1.5rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba($color-grey-dark, 0.3);
+        }
+      }
+    }
+  }
 }
 

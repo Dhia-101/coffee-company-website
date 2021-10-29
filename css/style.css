@@ -140,7 +140,7 @@ body {
 
 .card {
   perspective: 150rem;
-  height: 55rem;
+  height: 49rem;
   position: relative; }
   .card__side {
     width: 100%;
@@ -153,17 +153,16 @@ body {
     border-radius: 3px;
     box-shadow: 0 0.5rem 4rem rgba(0, 0, 0, 0.15);
     overflow: hidden; }
-    .card__side--front {
-      background-color: #7ed56f; }
     .card__side--back {
-      transform: rotateY(180deg);
-      background-color: #FFF; }
+      transform: rotateY(180deg); }
+      .card__side--back-first-card {
+        background-image: linear-gradient(to right bottom, #ff7730, #ffb900); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
   .card__picture {
-    height: 40%;
+    height: 20rem;
     background-size: cover;
     background-position: top left;
     background-blend-mode: screen;
@@ -186,6 +185,18 @@ body {
     padding: 1rem 2rem; }
     .card__heading-span--first-card {
       background-image: linear-gradient(to right, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style-type: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        padding: 1rem 0;
+        color: #777;
+        font-size: 1.5rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid rgba(119, 119, 119, 0.3); }
 
 .composition {
   position: relative; }
