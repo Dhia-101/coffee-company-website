@@ -45,6 +45,9 @@
     &--second-card {
       background-image: linear-gradient(to right, $color-primary, $color-primary-dark) ,url("../img/nat-6.jpg");
     }
+    &--third-card {
+      background-image: linear-gradient(to right, $color-blue-lighter, $color-blue) ,url("../img/nat-7.jpg");
+    }
   }
 
   &__heading {
@@ -71,6 +74,10 @@
     &--second-card {
       background-image:
               linear-gradient(to right, rgba($color-primary, .85), rgba($color-primary-dark, .85));
+    }
+    &--third-card {
+      background-image:
+              linear-gradient(to right, rgba($color-blue-lighter, .85), rgba($color-blue, .85));
     }
 
   }
@@ -104,6 +111,9 @@
       }
       &-second-card {
         background-image: linear-gradient(to right bottom, $color-primary-dark, $color-primary);
+      }
+      &-third-card {
+        background-image: linear-gradient(to right bottom, $color-blue-lighter, $color-blue);
       }
   }
 

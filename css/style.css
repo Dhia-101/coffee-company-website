@@ -169,6 +169,8 @@ body {
       background-image: linear-gradient(to right, #ff7730, #ffb900), url("../img/nat-5.jpg"); }
     .card__picture--second-card {
       background-image: linear-gradient(to right, #55c57a, #28b485), url("../img/nat-6.jpg"); }
+    .card__picture--third-card {
+      background-image: linear-gradient(to right, #2998ff, #5643fa), url("../img/nat-7.jpg"); }
   .card__heading {
     font-size: 2.5rem;
     font-weight: 300;
@@ -187,6 +189,8 @@ body {
       background-image: linear-gradient(to right, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
     .card__heading-span--second-card {
       background-image: linear-gradient(to right, rgba(85, 197, 122, 0.85), rgba(40, 180, 133, 0.85)); }
+    .card__heading-span--third-card {
+      background-image: linear-gradient(to right, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -205,6 +209,8 @@ body {
       background-image: linear-gradient(to right bottom, #ff7730, #ffb900); }
     .card__side--back-second-card {
       background-image: linear-gradient(to right bottom, #28b485, #55c57a); }
+    .card__side--back-third-card {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card__cta {
     left: 50%;
     position: absolute;
