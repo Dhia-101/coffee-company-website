@@ -303,21 +303,22 @@ body {
   margin: 0 auto;
   width: 75%;
   height: fit-content;
-  padding: 6rem;
-  padding-left: 9rem;
+  padding: 6rem 6rem 6rem 9rem;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   font-size: 1.6rem;
   transform: skewX(10deg); }
-  .story > * {
-    transform: skewX(-10deg); }
   .story__figure {
     float: left;
     width: 15rem;
     height: 15rem;
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
-    background-color: #777777;
     transform: translateX(-3rem) skewX(-10deg); }
+  .story__img {
+    height: 100%;
+    transform: translateX(-3rem); }
+  .story__text {
+    transform: skewX(-10deg); }
 
 .row {
   max-width: 114rem;
@@ -387,5 +388,5 @@ body {
   padding: 30rem 0 10rem; }
 
 .section-stories {
-  padding: 15rem 0;
+  padding: 10rem 0 20rem;
   background-color: #e8e8e8; }

@@ -3,15 +3,10 @@
   margin: 0 auto;
   width: 75%;
   height: fit-content;
-  padding: 6rem;
-  padding-left: 9rem;
+  padding: 6rem 6rem 6rem 9rem;
   box-shadow: 0 3rem 6rem rgba($color-shadow, 0.1);
   font-size: $default-font-size;
   transform: skewX(10deg);
-
-  & > * {
-    transform: skewX(-10deg);
-  }
 
   &__figure {
     float: left;
@@ -19,12 +14,16 @@
     height: 15rem;
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
-    background-color: #777777;
     transform: translateX(-3rem) skewX(-10deg);
+  }
 
+  &__img {
+      height: 100%;
+      transform: translateX(-3rem);
   }
 
   &__text {
+    transform: skewX(-10deg);
   }
 }
 
