@@ -137,6 +137,11 @@ body {
     color: #777777; }
     .btn--white:after {
       background-color: #FFF; }
+  .btn--primary {
+    background-color: #55c57a;
+    color: #FFF; }
+    .btn--primary:after {
+      background-color: inherit; }
 
 .card {
   perspective: 150rem;
@@ -180,7 +185,7 @@ body {
     top: 22%;
     right: 1rem;
     text-align: right;
-    width: 50%; }
+    width: 70%; }
   .card__heading-span {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
@@ -355,4 +360,4 @@ body {
   margin-top: -27rem;
   text-align: center;
   background-color: #f7f7f7;
-  padding: 30rem 0; }
+  padding: 30rem 0 10rem; }
