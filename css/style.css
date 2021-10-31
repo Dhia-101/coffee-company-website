@@ -295,6 +295,24 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: inherit;
+  outline: none;
+  box-sizing: initial;
+  border: 3px solid transparent;
+  width: 50%; }
+  .form__input:focus {
+    outline: 0;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #55c57a; }
+
 .link:link, .link:visited {
   font-size: 1.6rem;
   color: #55c57a;
