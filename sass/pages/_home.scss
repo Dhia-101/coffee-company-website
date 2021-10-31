@@ -54,4 +54,9 @@
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1rem 2rem rgba($color-shadow, 0.15);
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+  }
 }
