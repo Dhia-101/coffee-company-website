@@ -1,8 +1,7 @@
 .form {
-
   &__group {
     &:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     }
   }
 
@@ -10,6 +9,7 @@
     font-size: 1.5rem;
     padding: 1.5rem 2rem;
     border-radius: 3px;
+    color: inherit;
     background-color: rgba($color-white, 0.8);
     font-family: inherit;
     outline: none;
@@ -17,15 +17,49 @@
     //background: rgba($color-white, 0.8);
     //background-clip:  padding-box;
     border: 3px solid transparent;
-    width: 50%;
-    &:focus {
+    width: 60%;
+    display: block;
+
+    &:focus:empty {
       outline: 0;
       box-shadow: 0 1rem 2rem rgba($color-shadow, 0.1);
       border-bottom: 3px solid $color-primary;
+      .form__label {
+        position: absolute;
+        top: 1rem;
+        left: 2.3rem;
+        font-size: 1.6rem;
+        opacity: 0;
+        transform: translateY(5rem);
+      }
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid #ff7730;
+    }
+
+    &::placeholder {
+      color: #999;
     }
   }
 
-  &__label {
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5rem);
+  }
 
+
+
+  &__label {
+    transition: all 0.4s;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, .6);
+    margin-left: 2.2rem;
+    display: inline-block;
+    margin-top: .7rem;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 }
