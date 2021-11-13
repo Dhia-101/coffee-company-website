@@ -309,22 +309,49 @@ body {
   box-sizing: initial;
   border: 3px solid transparent;
   width: 60%;
-  display: block; }
-  .form__input:focus:empty {
+  display: block;
+  transition: all 0.3s; }
+  .form__input:focus {
     outline: 0;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid #55c57a; }
-    .form__input:focus:empty .form__label {
-      position: absolute;
-      top: 1rem;
-      left: 2.3rem;
-      font-size: 1.6rem;
-      opacity: 0;
-      transform: translateY(5rem); }
   .form__input:focus:invalid {
     border-bottom: 3px solid #ff7730; }
   .form__input::placeholder {
     color: #999; }
+
+.form__radio-group {
+  width: 30%;
+  display: inline-block;
+  font-size: 1.6rem;
+  position: relative; }
+
+.form__radio-label {
+  cursor: pointer;
+  padding-left: 4rem; }
+
+.form__radio-input {
+  display: none;
+  opacity: 0; }
+
+.form__radio-button {
+  position: absolute;
+  left: 0;
+  top: -.6rem;
+  height: 3rem;
+  width: 3rem;
+  border: 5px solid #55c57a;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center; }
+  .form__radio-button::after {
+    display: block;
+    content: " ";
+    height: 2rem;
+    width: 2rem;
+    background-color: #55c57a;
+    border-radius: 100%; }
 
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
