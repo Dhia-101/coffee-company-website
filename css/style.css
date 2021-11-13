@@ -101,6 +101,9 @@ body {
 .mt-large {
   margin-top: 8rem; }
 
+.mt-medium {
+  margin-top: 4rem; }
+
 .text-center {
   text-align: center; }
 
@@ -119,21 +122,26 @@ body {
 
 .btn {
   position: relative;
-  display: inline-block; }
-  .btn:link, .btn:visited {
+  display: inline-block;
+  border: 0; }
+  .btn, .btn:link, .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 4rem;
     border-radius: 100px;
     font-size: 1.6rem;
     transition: transform 0.3s;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
-  .btn:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer; }
+  .btn:hover, .btn:focus {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
-    .btn:hover:after {
+    .btn:hover:after, .btn:focus:after {
       transform: scale(1.5, 1.7);
       opacity: 0; }
+  .btn:focus {
+    outline: 3px solid #55c57a;
+    outline-offset: 2px; }
   .btn:active {
     transform: translateY(-3px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
@@ -320,15 +328,31 @@ body {
   .form__input::placeholder {
     color: #999; }
 
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5rem); }
+
+.form__label {
+  transition: all 0.4s;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-left: 2.2rem;
+  display: inline-block;
+  margin-top: .7rem;
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible; }
+
 .form__radio-group {
-  width: 30%;
+  width: 40%;
   display: inline-block;
   font-size: 1.6rem;
   position: relative; }
 
 .form__radio-label {
   cursor: pointer;
-  padding-left: 4rem; }
+  padding-left: 5rem; }
 
 .form__radio-input {
   display: none;
@@ -347,27 +371,19 @@ body {
   align-items: center; }
   .form__radio-button::after {
     display: block;
+    opacity: 0;
     content: " ";
     height: 2rem;
     width: 2rem;
     background-color: #55c57a;
-    border-radius: 100%; }
+    border-radius: 100%;
+    transition: all 0.2s; }
 
-.form__input:placeholder-shown + .form__label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-5rem); }
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1; }
 
-.form__label {
-  transition: all 0.4s;
-  font-size: 1.4rem;
-  color: rgba(0, 0, 0, 0.6);
-  margin-left: 2.2rem;
-  display: inline-block;
-  margin-top: .7rem;
-  transform: translateY(0);
-  opacity: 1;
-  visibility: visible; }
+.form__submit-button {
+  margin: 3.2rem 0 1.3rem; }
 
 .link:link, .link:visited {
   font-size: 1.6rem;
@@ -506,11 +522,10 @@ body {
   padding: 10rem 0; }
 
 .book-card {
-  height: 50rem;
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("../img/nat-10.jpg");
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
   .book-card__form {
-    width: 50%;
-    padding: 6rem; }
+    width: 60%;
+    padding: 4rem; }

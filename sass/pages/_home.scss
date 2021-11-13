@@ -44,7 +44,6 @@
 }
 
 .book-card {
-  height: 50rem;
   background-image: linear-gradient(
                   105deg,
                   rgba($color-white, 0.8) 0%,
@@ -56,7 +55,7 @@
   box-shadow: 0 1rem 2rem rgba($color-shadow, 0.15);
 
   &__form {
-    width: 50%;
-    padding: 6rem;
+    width: 60%;
+    padding: 4rem;
   }
 }
