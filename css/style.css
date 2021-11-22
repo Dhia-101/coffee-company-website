@@ -456,11 +456,28 @@ body {
     width: 15rem;
     height: auto;
     margin-bottom: 6rem; }
+  .footer__navigation {
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    display: inline-block; }
   .footer__item {
     display: inline-block;
     margin: 0 1.2rem; }
-  .footer__link {
-    color: white; }
+  .footer__link:visited, .footer__link:link {
+    color: #777;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all .2s; }
+  .footer__link:hover, .footer__link:active {
+    color: #55c57a;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: rotate(5deg) scale(1.2); }
+  .footer__copyright {
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    width: 90%;
+    float: right; }
 
 .row {
   max-width: 114rem;
