@@ -437,7 +437,9 @@ body {
     width: 100%; }
   .popup__text {
     font-size: 1.5rem;
-    margin-bottom: 1.5rem; }
+    column-count: 2;
+    margin-bottom: 1.5rem;
+    hyphens: auto; }
 
 .story {
   background-color: rgba(255, 255, 255, 0.5);
