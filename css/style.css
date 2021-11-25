@@ -412,6 +412,8 @@ body {
   top: 0;
   width: 100%;
   z-index: 3000; }
+  .popup__heading-tertiary {
+    margin-bottom: .8rem; }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -419,7 +421,23 @@ body {
     transform: translate(-50%, -50%);
     background-color: #FFF;
     width: 80%;
-    height: 80%; }
+    border-radius: 3px;
+    display: table;
+    overflow: hidden; }
+  .popup__left-col {
+    display: table-cell;
+    width: 30%;
+    font-size: 0; }
+  .popup__right-col {
+    display: table-cell;
+    width: 70%;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+  .popup__img {
+    width: 100%; }
+  .popup__text {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem; }
 
 .story {
   background-color: rgba(255, 255, 255, 0.5);

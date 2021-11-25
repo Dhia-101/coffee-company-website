@@ -7,10 +7,39 @@
   width: 100%;
   z-index: 3000;
 
+  &__heading-tertiary {
+    margin-bottom: .8rem;
+  }
+
   &__content {
     @include centerBox;
     background-color: $color-white;
     width: 80%;
-    height: 80%;
+    border-radius: 3px;
+    display: table;
+    overflow: hidden;
+  }
+
+  &__left-col {
+    display: table-cell;
+    width: 30%;
+    font-size: 0;
+  }
+
+  &__right-col {
+    display: table-cell;
+    width: 70%;
+    vertical-align: middle;
+    padding: 3rem 5rem;
+  }
+
+  &__img {
+    // display:block => or remove font-size: 0 on parent box
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 }
