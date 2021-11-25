@@ -244,9 +244,9 @@ body {
     .card__side--back-third-card {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card__cta {
-    left: 50%;
     position: absolute;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 90%; }
   .card__price-box {
@@ -403,6 +403,23 @@ body {
 .link:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
+
+.popup {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3000; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    width: 80%;
+    height: 80%; }
 
 .story {
   background-color: rgba(255, 255, 255, 0.5);
@@ -603,10 +620,10 @@ body {
 
 .navigation__list {
   white-space: nowrap;
-  left: 50%;
   list-style-type: none;
   position: absolute;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%); }
 
 .navigation__item {

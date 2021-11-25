@@ -100,11 +100,8 @@
 
   &__list {
     white-space: nowrap;
-    left: 50%;
     list-style-type: none;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    @include centerBox;
   }
 
   &__item {
