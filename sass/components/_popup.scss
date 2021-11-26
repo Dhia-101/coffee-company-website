@@ -15,8 +15,12 @@
     visibility: visible;
   }
 
-  &__close {
+  &:target &__content {
+    transform: translate(-50%, -50%) scale(1);
+  }
 
+
+  &__close {
     &:link,
     &:visited {
       position: absolute;
@@ -33,7 +37,6 @@
     &:hover {
       color: $color-primary;
     }
-
   }
 
   &__heading-tertiary {
@@ -47,6 +50,8 @@
     border-radius: 3px;
     display: table;
     overflow: hidden;
+    transition: all 0.3s 0.2s;
+    transform: translate(-50%, -50%) scale(0);
   }
 
   &__left-col {
