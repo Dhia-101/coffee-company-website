@@ -15,6 +15,27 @@
     visibility: visible;
   }
 
+  &__close {
+
+    &:link,
+    &:visited {
+      position: absolute;
+      top: 1rem;
+      text-decoration: none;
+      color: $color-grey-dark;
+      right: 2.5rem;
+      font-size: 3rem;
+      display: inline-block;
+      transition: all .3s;
+    }
+
+    &:active,
+    &:hover {
+      color: $color-primary;
+    }
+
+  }
+
   &__heading-tertiary {
     margin-bottom: .8rem;
   }
