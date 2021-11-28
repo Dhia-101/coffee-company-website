@@ -535,6 +535,9 @@ body {
   background-color: #333;
   padding: 10rem 0;
   font-size: 1.4rem; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8 rem 0; } }
   .footer__logo-box {
     text-align: center; }
   .footer__logo {
@@ -545,6 +548,10 @@ body {
     border-top: 1px solid #777;
     padding-top: 2rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        text-align: center;
+        width: 100%; } }
   .footer__item {
     display: inline-block;
     margin: 0 1.2rem; }
@@ -563,6 +570,11 @@ body {
     padding-top: 2rem;
     width: 90%;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        float: none;
+        text-align: center;
+        width: 100%; } }
 
 .row {
   max-width: 114rem;
