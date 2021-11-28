@@ -613,6 +613,9 @@ body {
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   position: relative; }
+  @media (max-width: 37.5em) {
+    .header {
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); } }
   .header__logo {
     position: absolute;
     width: 8rem;
@@ -654,6 +657,10 @@ body {
   right: 6rem;
   top: 6rem;
   cursor: pointer; }
+  @media (max-width: 56.25em) {
+    .navigation__button {
+      top: 3.5rem;
+      right: 3.5rem; } }
 
 .navigation__button:hover .navigation__icon::before {
   top: -1rem; }
@@ -691,6 +698,10 @@ body {
   width: 5rem;
   z-index: 1000;
   transition: transform 0.6s cubic-bezier(0.83, 0, 0.17, 1); }
+  @media (max-width: 56.25em) {
+    .navigation__background {
+      top: 3.5rem;
+      right: 4rem; } }
 
 .navigation__nav {
   height: 100vh;

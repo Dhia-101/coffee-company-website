@@ -8,6 +8,10 @@
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   position: relative;
 
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+
   &__logo {
     position: absolute;
     width: 8rem;
