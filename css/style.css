@@ -30,7 +30,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  box-sizing: border-box; }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -396,7 +397,7 @@ body {
   border: 3px solid transparent;
   width: 60%;
   display: block;
-  transition: all 0.3s; }
+  transition: border-bottom 0.3s; }
   .form__input:focus {
     outline: 0;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -405,6 +406,9 @@ body {
     border-bottom: 3px solid #ff7730; }
   .form__input::placeholder {
     color: #999; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
 
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
@@ -427,6 +431,11 @@ body {
   display: inline-block;
   font-size: 1.6rem;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      display: block;
+      margin: 2rem 0;
+      width: 100%; } }
 
 .form__radio-label {
   cursor: pointer;
@@ -439,9 +448,9 @@ body {
 .form__radio-button {
   position: absolute;
   left: 0;
-  top: -.6rem;
-  height: 3rem;
-  width: 3rem;
+  top: 0;
+  height: 24px;
+  width: 24px;
   border: 5px solid #55c57a;
   border-radius: 100%;
   display: inline-flex;
@@ -451,8 +460,8 @@ body {
     display: block;
     opacity: 0;
     content: " ";
-    height: 2rem;
-    width: 2rem;
+    height: 10px;
+    width: 10px;
     background-color: #55c57a;
     border-radius: 100%;
     transition: all 0.2s; }
@@ -864,9 +873,18 @@ body {
 
 .book-card {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("../img/nat-10.jpg");
-  background-size: 100%;
+  background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+  .book-card * {
+    box-sizing: border-box; }
+  @media (max-width: 56.25em) {
+    .book-card {
+      background: url("../img/nat-10.jpg") rgba(255, 255, 255, 0.8);
+      background-blend-mode: color; } }
   .book-card__form {
     width: 60%;
     padding: 4rem; }
+    @media (max-width: 56.25em) {
+      .book-card__form {
+        width: 100%; } }
