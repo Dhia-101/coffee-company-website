@@ -34,8 +34,6 @@
   //& > * {
   //  transform: skewY(7deg);
   //}
-
-
 }
 
 .section-tours {
@@ -48,6 +46,9 @@
 .section-stories {
   position: relative;
   padding: 10rem 0;
+  @include respond(tab-port) {
+    padding: 6rem 0;
+  }
 }
 
 .section-booking {
