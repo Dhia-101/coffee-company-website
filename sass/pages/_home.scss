@@ -7,6 +7,10 @@
   &__text {
     text-align: left;
   }
+
+  @include respond(tab-port) {
+    padding: 37rem 0 54rem;
+  }
 }
 
 .section-features {
@@ -20,10 +24,17 @@
 
   clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
 
+  @include respond(tab-port) {
+      margin-top: -25rem;
+      clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  }
+
   //transform: skewY(-7deg);
   //& > * {
   //  transform: skewY(7deg);
   //}
+
+
 }
 
 .section-tours {

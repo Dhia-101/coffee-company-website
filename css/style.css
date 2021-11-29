@@ -762,6 +762,9 @@ body {
   text-align: center; }
   .section-about__text {
     text-align: left; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 37rem 0 54rem; } }
 
 .section-features {
   padding: 30rem 0;
@@ -770,6 +773,10 @@ body {
   background-attachment: fixed;
   margin-top: -25rem;
   clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%); }
+  @media (max-width: 56.25em) {
+    .section-features {
+      margin-top: -25rem;
+      clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%); } }
 
 .section-tours {
   margin-top: -27rem;
