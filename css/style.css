@@ -615,6 +615,7 @@ body {
   .footer__logo-box {
     text-align: center; }
   .footer__logo {
+    display: inline-block;
     width: 15rem;
     height: auto;
     margin-bottom: 6rem; }
