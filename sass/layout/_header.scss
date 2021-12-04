@@ -9,12 +9,12 @@
   position: relative;
 
   @media (min-resolution: 192dpi) and (min-width: 37.5em),
-          (min-width: 112.5em)
+         (min-device-pixel-ratio: 2) and (min-width: 37.5em),
+         (min-width: 112.5em)
   {
     background-image:
-            linear-gradient(to right bottom, rgba(red, 0.8), rgba($color-primary-dark, 0.8)),
+            linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-primary-dark, 0.8)),
             url("../img/hero.jpg");
-
   }
 
   @include respond(tab-port) {
