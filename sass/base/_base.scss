@@ -25,3 +25,22 @@ body {
   background-color: $color-primary;
   color: white;
 }
+
+::-webkit-scrollbar {
+  overflow: visible;
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-primary;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darken($color-primary, 10%);
+  opacity: 0.3;
+}

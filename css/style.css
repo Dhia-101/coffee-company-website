@@ -52,6 +52,21 @@ body {
   background-color: #AD6D2F;
   color: white; }
 
+::-webkit-scrollbar {
+  overflow: visible;
+  width: 7px; }
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2); }
+
+::-webkit-scrollbar-thumb {
+  background: #AD6D2F;
+  border-radius: 25px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #855424;
+  opacity: 0.3; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
