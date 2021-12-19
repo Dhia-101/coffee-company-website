@@ -4,10 +4,9 @@
   width: 75%;
   position: relative;
   height: fit-content;
-  padding: 6rem 6rem 6rem 9rem;
+  padding: 4rem 6rem 4rem 9rem;
   box-shadow: 0 3rem 6rem rgba($color-shadow, .1);
   font-size: $default-font-size;
-  transform: skewX(10deg);
 
   @include respond(tab-port) {
     padding: 4rem 4rem 4rem 6rem;
@@ -23,12 +22,11 @@
     height: 15rem;
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
-    transform: translateX(-3rem) skewX(-10deg);
+    transform: translateX(-3rem);
     z-index: 2;
     position: relative;
 
     @include respond(phone) {
-      transform: skewX(0);
       margin-right: 2.5rem;
       top: -.3rem;
     }
@@ -36,7 +34,7 @@
 
   &__img {
       height: 100%;
-      transform: translateX(-3rem) scale(1.2);
+      transform: translateY(8%) scale(1.2);
       transition: all 0.3s;
   }
 
@@ -46,12 +44,11 @@
   }
 
   &__figure:hover &__img {
-    transform: translateX(-3rem) scale(1);
+    transform: translateY(8%) scale(1);
     filter: blur(3px) brightness(80%);
   }
 
   &__text {
-    transform: skewX(-10deg);
 
     @include respond(phone) {
       transform: skewX(0);

@@ -1,34 +1,21 @@
 .section-about {
   background-color: #f7f7f7;
-  padding: 30rem 0 35rem;
-  margin-top: -25vh;
+  padding: 6rem 0 12rem;
   text-align: center;
 
   &__text {
     text-align: left;
   }
-
-  @include respond(tab-port) {
-    padding: 34rem 0;
-  }
 }
 
 .section-features {
-  padding: 30rem 0;
+  padding: 13rem 0;
   background-image:
           linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-primary-dark, 0.8)),
           url("../img/nat-4.jpg");
   background-size: cover;
   background-attachment: fixed;
-  margin-top: -25rem;
 
-  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
-
-  @include respond(tab-port) {
-    margin-top: -25rem;
-    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-    padding: 24rem 0;
-  }
 
   //transform: skewY(-7deg);
   //& > * {
@@ -37,15 +24,15 @@
 }
 
 .section-tours {
-  margin-top: -27rem;
+
   text-align: center;
   background-color: #f7f7f7;
-  padding: 30rem 0 10rem ;
+  padding: 6rem 0 10rem ;
 }
 
 .section-stories {
   position: relative;
-  padding: 10rem 0;
+  padding: 7rem 0;
   @include respond(tab-port) {
     padding: 6rem 0;
   }
@@ -60,6 +47,10 @@
 
   * {
     box-sizing: border-box;
+  }
+
+  &__title {
+    color: $color-primary;
   }
 
   background-image: linear-gradient(

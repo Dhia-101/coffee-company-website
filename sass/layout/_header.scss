@@ -1,39 +1,33 @@
 .header {
-  height: 95vh;
+  height: 100vh;
   background-image:
-          linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-primary-dark, 0.8)),
+          linear-gradient(to right, rgba(#000, 1) 0%, rgba(transparent, 0.8) 30%),
           url("../img/hero-small.jpg");
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   position: relative;
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5em),
-         (min-device-pixel-ratio: 2) and (min-width: 37.5em),
-         (min-width: 112.5em)
-  {
-    background-image:
-            linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-primary-dark, 0.8)),
-            url("../img/hero.jpg");
-  }
-
-  @include respond(tab-port) {
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include respond(phone) {
+    flex-direction: column;
+    text-align: center;
   }
 
   &__logo {
-    position: absolute;
+    fill: #fff;
     width: 8rem;
-    top: 4rem;
-    left: 4rem;
+    margin-right: 3rem;
+    align-self: center;
   }
 
   &__text-box {
-    left: 50%;
-    position: absolute;
-    text-align: center;
-    top: 40%;
-    transform: translate(-50%, -50%);
+    text-align: left;
+    @include respond(phone) {
+      text-align: center;
+    }
   }
+
 }
 

@@ -1,21 +1,28 @@
 .footer {
   background-color: $color-black-grey;
-  padding: 10rem 0;
+  padding: 8rem 0 6rem;
   font-size: 1.4rem;
+  text-align: center;
 
   @include respond(tab-port) {
-    padding: 8 rem 0;
+    padding: 8rem 0;
   }
 
   &__logo-box {
     text-align: center;
+    margin-bottom: 8rem;
   }
 
   &__logo {
     display: inline-block;
     width: 15rem;
     height: auto;
-    margin-bottom: 6rem;
+    fill: $color-primary;
+  }
+
+  &__logo-text {
+    font-size: 3.5rem;
+    color: $color-primary;
   }
 
   &__navigation {
@@ -49,8 +56,7 @@
     &:hover,
     &:active {
       color: $color-primary;
-      box-shadow: 0 1rem 2rem rgba($color-shadow, .4);
-      transform: rotate(5deg) scale(1.2);
+      transform: scale(1.2);
     }
   }
 

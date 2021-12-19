@@ -12,6 +12,10 @@
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
     -webkit-background-clip: text;
     color: transparent;
+    height: 8.1rem;
+    margin-bottom: 2.5rem;
+    width: 10rem;
+    text-align: center;
   }
   &__text {
     padding: .5rem 3rem;

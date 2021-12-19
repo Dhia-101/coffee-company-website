@@ -2,13 +2,16 @@
   position: relative;
   display: inline-block;
   border: 0;
+
+  &--round {
+    border-radius: 25px;
+  }
   &,
   &:link,
   &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.5rem 4rem;
-    border-radius: 100px;
+    padding: 1rem 5rem;
     font-size: $default-font-size;
     transition: transform 0.3s;
     box-shadow: 0 5px 10px rgba($color-shadow, 0.2);
@@ -19,10 +22,6 @@
   &:focus {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba($color-shadow, 0.2) ;
-    &:after {
-      transform: scale(1.5, 1.7);
-      opacity: 0;
-    }
   }
 
   &:focus {
@@ -35,18 +34,6 @@
     box-shadow: 0 5px 10px rgba($color-shadow, 0.2) ;
   }
 
-  &:after {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: 0.2s;
-  }
 
   &--animated {
     animation: MoveInBottom 1.5s ease-out 0.7s;
@@ -62,7 +49,7 @@
   }
 
   &--primary {
-    background-color: $color-primary;
+    background: linear-gradient(to right,#E4BC84, #AD6D2F);
     color: $color-white;
     &:after {
       background-color: inherit;
