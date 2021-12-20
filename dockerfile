@@ -4,6 +4,8 @@
 # Use official node image as the base image
 FROM node:latest as build
 
+ARG PORT
+
 # Set the working directory
 WORKDIR /usr/local/app
 
@@ -26,4 +28,4 @@ FROM nginx:latest
 COPY --from=build /usr/local/app /usr/share/nginx/html
 
 # Expose port 80
-EXPOSE 80
+CMD sed -i -e 's/$PORT/'"$PORT"'/g' /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'
